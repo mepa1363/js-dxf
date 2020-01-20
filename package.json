@@ -1,5 +1,5 @@
 {
-  "name": "dxf-writer",
+  "name": "@mepa1363/dxf-writer",
   "version": "1.5.0",
   "description": "Dead simple 2D DXF writer",
   "main": "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ognjen-petrovic/js-dxf.git"
+    "url": "git+https://github.com/mepa1363/js-dxf.git"
   },
   "keywords": [
     "DXF",
@@ -28,12 +28,15 @@
   "author": "Ognjen Petrovic",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ognjen-petrovic/js-dxf/issues"
+    "url": "https://github.com/mepa1363/js-dxf/issues"
   },
-  "homepage": "https://github.com/ognjen-petrovic/js-dxf#readme",
+  "homepage": "https://github.com/mepa1363/js-dxf#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "browserify": "^16.2.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
