@@ -1,1 +1,1 @@
-module.exports = require('./src/Drawing');
+module.exports = require('./dist/Drawing');

@@ -8,7 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "browserify -r ./src/Drawing.js:Drawing > ./examples/browser/dxf_bundle.js"
+    "bundle": "browserify -r ./src/Drawing.js:Drawing > ./examples/browser/dxf_bundle.js",
+    "start": "npm run dev",
+    "dev": "npm test -- -w",
+    "init": "mkdir dist",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean && npm run init",
+    "build": "babel ./src -d ./dist --ignore test.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +32,8 @@
   },
   "homepage": "https://github.com/ognjen-petrovic/js-dxf#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "browserify": "^16.2.3"
   }
 }
